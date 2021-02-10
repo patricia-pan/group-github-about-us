@@ -3,7 +3,7 @@ export default function AboutEachPerson(props) {
     <div>
       {props.people.map((person, index) =>{
         return (
-          <div key={index}>
+          <div key={`key is ${index}`}>
             <h1>{person.name}</h1>
             <p>{person.bio}</p>
           </div>
